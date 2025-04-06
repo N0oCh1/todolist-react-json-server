@@ -22,6 +22,11 @@ export default defineConfig({
 				type: "asset"
 			},
 			{
+        test: /\.css$/,
+        use: ["postcss-loader"],
+        type: "css",
+      },
+			{
 				test: /\.(jsx?|tsx?)$/,
 				use: [
 					{
